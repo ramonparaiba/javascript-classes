@@ -11,35 +11,59 @@
 <body>
 
   <h1>Nota de Compra</h1>
-  <table style="width:100%">
-    <tr>
-      <th>Item/Produto</th>
-      <th>Preço Unitário</th>
-      <th>Quantidade</th>
-      <th>Total</th>
-    </tr>
-    <tr>
-      <td>Boné</td>
-      <td class="preco">25</td>
-      <td class="qtidade">3</td>
-      <td class="total">valor</td>
-    </tr>
-    
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Produto</th>
+        <th scope="col">Preço Unitário</th>
+        <th scope="col">Quantidade</th>
+        <th scope="col">Valor Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Boné</td>
+        <td class = "preco">25</td>
+        <td class = "qtidade">3</td>
+        <td class = "total">valor</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Camiseta</td>
+        <td class = "preco">55</td>
+        <td class = "qtidade">6</td>
+        <td class = "total">valor</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Tênis</td>
+        <td class = "preco">190</td>
+        <td class = "qtidade">4</td>
+        <td class = "total">valor</td>
+      </tr>
+    </tbody>
   </table>
 
 
 
 
   <script>
-    const preco = document.getElementById('preco');
-    const qtidade = document.getElementById('qtidade');
-    let total = document.getElementById('total');
+    const preco = document.getElementsByClassName('preco');
+    const qtidade = document.getElementsByClassName('qtidade');
+    let total = document.getElementsByClassName('total');
     
-    const precoCalc = parseFloat(preco.innerHTML);
-    const qtdCalc = parseFloat(qtidade.innerHTML);
-    total.innerHTML = precoCalc * qtdCalc;
+    
 
-    console.log(qtidade.textContent);
+    for(let i = 0; i < total.length; i++){
+      const precoCalc = parseFloat(preco[i].innerHTML);
+      const qtdCalc = parseFloat(qtidade[i].innerHTML);
+      total[i].innerHTML = precoCalc * qtdCalc;
+    }
+    console.log(preco.length);
+    console.log(preco[0].innerHTML);
+    console.log(preco[1].innerHTML);
 
 
     

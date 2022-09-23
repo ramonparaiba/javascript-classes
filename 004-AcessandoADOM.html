@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acessando a DOM</title>
+</head>
+<body>
+
+  <h1>Esse é o nosso título</h1>
+  <h2>Esse é o subtítulo</h2>
+
+  <h3>Nota 1</h3>
+  <h4 id="nota1">8</h4>
+  <h3>Nota 2</h3>
+  <h4 id="nota2">5</h4>
+  <h3>Nota 3</h3>
+  <h4 id="nota3">7</h4>
+  <h3>Média</h3>
+  <h4 id="media">Valor Média</h4>
+
+  
+  <script>
+    let nota1 = document.getElementById("nota1").textContent;
+    let nota2 = document.getElementById("nota2").textContent;
+    let nota3 = document.getElementById("nota3").textContent;
+    let media = document.getElementById("media");
+
+    let nota1F = parseFloat(nota1);
+    let nota2F = parseFloat(nota2);
+    let nota3F = parseFloat(nota3);
+    media.textContent = (nota1F + nota2F + nota3F)/3;
+        
+    document.querySelector('h1').textContent = 'Outro Título';
+
+    console.log(media)
+    
+  </script>
+</body>
+</html>
