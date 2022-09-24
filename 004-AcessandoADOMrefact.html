@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acessando a DOM</title>
+  <style>
+    *{padding:0 5%; margin:0;}
+  </style>
+</head>
+<body>
+
+  <h1>Esse é o nosso título</h1>
+  <h2>Esse é o subtítulo</h2>
+
+  <h3>Nota 1</h3>
+  <h4 class="nota">8</h4>
+  <h3>Nota 2</h3>
+  <h4 class="nota">5</h4>
+  <h3>Nota 3</h3>
+  <h4 class="nota">7</h4>
+  <h3>Nota 4</h3>
+  <h4 class="nota">3</h4>
+  <h3>Nota 5</h3>
+  <h4 class="nota">6</h4>
+  <h3>Média</h3>
+  <h4 id="media">Valor Média</h4>
+
+  
+  <script>
+    let notas = document.getElementsByClassName('nota');
+    let media = document.getElementById('media');
+    let soma = 0;
+    
+    for(let i=0; i < notas.length; i++){
+      soma += parseFloat(notas[i].innerHTML);
+    }
+    media.innerHTML = soma/notas.length;      
+  </script>
+</body>
+</html>
