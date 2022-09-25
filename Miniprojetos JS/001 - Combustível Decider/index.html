@@ -12,19 +12,17 @@
   <h2>Versão 0.0.1</h2>
 
   <div class="container input">
-    <form action="">
-      <input type="text" id="gasolina" placeholder="Preço da Gasolina R$">
-      <input type="text" id="etanol" placeholder="Preço do Etanol R$">
-      <input type="submit" value="Calcular" id="botao">
-    </form>
+    
+      <input type="number" id='gasolina' placeholder="Preço da Gasolina R$">
+      <input type="number" id="etanol" placeholder="Preço do Etanol R$">      
+    
+    <button id="botao">Calcular</button>    
   </div>
+  <span id="alerta" style="color:red;"></span>
   <hr>
   <h3>Resultado:</h3>
-  <p id="Resultado"></p>
+  <p id="Resultado" style="color:green;"></p>
   
-  <script>
-    let resultado = document.getElementById("Resultado")
-    resultado.innerHTML = 'Cálculo'
-  </script>
+  <script src="calcula.js"></script>
 </body>
 </html>
