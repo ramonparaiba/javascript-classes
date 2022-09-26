@@ -5,23 +5,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Combustivel Decider</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Gasolina ou Etanol</h1>
-  <h2>Versão 0.0.1</h2>
+  <div id="layout" >
+    <h1>Gasolina ou Etanol?</h1>
+    <h2>Versão 0.0.1</h2>
 
-  <div class="container input">
+    <div class="inputs">      
+        <input type="number" id='gasolina' placeholder="Preço da Gasolina R$">
+        <input type="number" id="etanol" placeholder="Preço do Etanol R$">  
+        <span id="alerta"></span>           
+    </div>
+    <button id="botao">Calcular</button>
     
-      <input type="number" id='gasolina' placeholder="Preço da Gasolina R$">
-      <input type="number" id="etanol" placeholder="Preço do Etanol R$">      
     
-    <button id="botao">Calcular</button>    
+    
+    <div id="display">
+      <h3>Resultado:</h3>
+      <p id="Resultado"></p>
+    </div>
   </div>
-  <span id="alerta" style="color:red;"></span>
-  <hr>
-  <h3>Resultado:</h3>
-  <p id="Resultado" style="color:green;"></p>
   
   <script src="calcula.js"></script>
 </body>
