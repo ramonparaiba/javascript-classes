@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muda Cores</title>
+  <style>
+    #boxtrocacor{
+      display: block;
+      text-align: center;
+      padding: 5% 10%;
+      background-color: #fff;
+      box-shadow: 0px 0 5px rgb(148, 148, 148);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mudança de Cores</h1>
+  </header>
+  <div id="boxtrocacor">       
+  </div>
+  <input id="cor" type="color" value="#4cd137"> 
+  <button id="botao"> Muda a cor </button>
+  
+
+  <script>
+    
+    let botao = document.getElementById("botao");
+    let box = document.getElementById("boxtrocacor");
+    let cor = document.getElementById("cor");
+
+    document.onload = box.style.backgroundColor = cor.value;
+    botao.addEventListener('click', (e)=>{
+      box.style.backgroundColor = cor.value 
+    })
+  </script>
+</body>
+</html>
