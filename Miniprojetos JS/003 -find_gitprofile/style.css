@@ -1,7 +1,10 @@
 *{
   text-align: center;
   margin: 0;
+  padding: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 #busca {
   padding: 10% 5%;
   background-color: #e6dbea;
@@ -20,4 +23,7 @@
   padding: 5%;
   border-radius: 20px;
   box-shadow: 0 5px  10px #6e6e6e;
+}
+#repositorios{
+  text-align: justify;
 }
