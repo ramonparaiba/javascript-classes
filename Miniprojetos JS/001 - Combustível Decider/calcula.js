@@ -1,8 +1,8 @@
 let gasolina = document.getElementById('gasolina')
-    let etanol = document.getElementById("etanol")
-    let resultado = document.getElementById("Resultado")
-    let botao = document.getElementById("botao")
-    let alerta = document.getElementById("alerta")
+let etanol = document.getElementById("etanol")
+let resultado = document.getElementById("Resultado")
+let botao = document.getElementById("botao")
+let alerta = document.getElementById("alerta")
     
     function calcular(){      
         let gas = parseFloat(gasolina.value)
