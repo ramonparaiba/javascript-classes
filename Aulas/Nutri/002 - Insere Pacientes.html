@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acompanhamento nutricional</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <h1>Acompanhamento Nutricional</h1>
+    <h3><strong>Nutricionista: </strong>Dra. Karoline Siqueira</h3>
+  </div>
+  <div id="forminsert" class="container">
+    <h3>Inserir novo paciente</h3>
+    <div class="row">
+      <div class="col"><input type="text" id="iname" class="form-control-plaintext" placeholder="Nome"></div>
+      <div class="col"><input type="text" id="ipeso" class="form-control-plaintext" placeholder="Peso"></div>
+      <div class="col"><input type="text" id="ialtura" class="form-control-plaintext" placeholder="Altura"></div>
+      <div class="col"><button type="submit" class="btn btn-primary mb-3" id="insert">Inserir</button></div>
+    </div>
+  </div>
+  <div class="container">      
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Peso</th>
+          <th scope="col">Altura</th>
+          <th scope="col">IMC</th>
+        </tr>
+      </thead>
+      <tbody id="rowpatient">
+      </tbody>
+    </table>
+  </div>
+  <script src="script2.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
