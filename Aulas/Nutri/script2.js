@@ -4,6 +4,7 @@ let ialtura = document.getElementById('ialtura')
 const insert = document.getElementById('insert')
 const tbody = document.getElementById('rowpatient')
 
+
 insert.addEventListener('click', () =>{
   if(iname.value != "" && ipeso.value != "" && ialtura.value != ""){
     const tr = document.createElement('tr')

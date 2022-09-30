@@ -1,0 +1,10 @@
+#newtarefa, button, #mensagem{
+  margin: 2%;
+  width: 100%;
+}
+
+#mensagem{
+  text-align: center;
+  background-color: rgb(245, 73, 0);
+  color: #ffffff;
+}
