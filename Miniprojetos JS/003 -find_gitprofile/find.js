@@ -5,11 +5,14 @@ let nome = document.getElementById('nome');
 let fotografia = document.getElementById('fotografia');
 let bio = document.getElementById('bio');
 let seguidores = document.getElementById('seguidores');
+let repositorios = document.getElementById('repositorios');
+let qtdrepos = document.getElementById('qtdrepos');
 
 async function getApiGitHub(){
   const response = await fetch(`https://api.github.com/users/${login.value}`);
   const profile = await response.json();
-  return profile;
+
+  return profile
 }
 
 
@@ -20,6 +23,8 @@ buscar.addEventListener('click', (e) => {
       fotografia.src = profile.avatar_url
       bio.innerHTML = profile.bio
       seguidores.innerHTML = profile.followers
+      qtdrepos.innerHTML = profile.public_repos
+      console.log(profile);      
   })
 })
 
