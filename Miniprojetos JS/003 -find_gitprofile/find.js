@@ -8,23 +8,31 @@ let seguidores = document.getElementById('seguidores');
 let repositorios = document.getElementById('repositorios');
 let qtdrepos = document.getElementById('qtdrepos');
 
-async function getApiGitHub(){
+async function getMetaData(){
   const response = await fetch(`https://api.github.com/users/${login.value}`);
   const profile = await response.json();
 
   return profile
 }
+async function getRepositories(){
+  const response = await fetch(`https://api.github.com/users/${login.value}/repos`)
+  const repositories = await response.json();
+  return repositories
+}
 
 
 buscar.addEventListener('click', (e) => {
-  console.log(login.value)
-  getApiGitHub().then(profile => {
+  getMetaData().then(profile => {
       nome.innerHTML = profile.name
       fotografia.src = profile.avatar_url
       bio.innerHTML = profile.bio
       seguidores.innerHTML = profile.followers
-      qtdrepos.innerHTML = profile.public_repos
-      console.log(profile);      
+      qtdrepos.innerHTML = profile.public_repos     
+  })
+  getRepositories().then(repositories => {
+    repositorios.innerHTML = repositories.map((item)=>{
+      return `<li>`+item.name+`</li>`
+    }) 
   })
 })
 
