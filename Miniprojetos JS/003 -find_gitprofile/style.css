@@ -13,17 +13,19 @@
   border: 0;
   padding: 2%;
 }
-#foto{
+#maincard{
   margin-top: 2px;
   padding: 10% 0;
   background-color: #ebebeb;
 }
-#foto img {
+#maincard img {
   background-color: #e3b0f4;
   padding: 5%;
   border-radius: 20px;
   box-shadow: 0 5px  10px #6e6e6e;
 }
-#repositorios{
-  text-align: justify;
+.repositorios ul{
+  padding: 0 10%;
+  list-style-type: none;
+  text-align: left;
 }

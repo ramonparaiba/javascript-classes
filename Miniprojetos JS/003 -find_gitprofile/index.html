@@ -14,19 +14,22 @@
     <input type="text" id="login" value="">
     <button id="buscar" >Buscar</button>
   </div>
-  <div id="foto">
-    <h2 id="nome"></h2>
-    <img src="imgs/profile.png" alt="" width="200" height="auto" id="fotografia">
-    <h2 id="nome"></h2>
-    
-    <p id="bio"></p>
-    <label for="">Folowers: </label>
-    <span id = "seguidores"></span>
-    <span id = "R"></span>
-    <h4>Repositórios: <span id="qtdrepos"></span></h4>
-    <hr>
-    <ul id="repositorios"></ul>
-    
+  <div id="maincard">
+    <div id="foto">
+      <h2 id="nome"></h2>
+      <img src="imgs/profile.png" alt="" width="200" height="auto" id="fotografia">
+      <h2 id="nome"></h2>
+      
+      <p id="bio"></p>
+      <label for="">Folowers: </label>
+      <span id = "seguidores"></span>
+      <span id = "R"></span>    
+      <hr>    
+    </div>
+    <div class="repositorios">
+      <h4>Repositórios: <span id="qtdrepos"></span></h4>
+      <ul id="reposlist"></ul>
+    </div>
   </div>
 
   <script src = "find.js"></script>

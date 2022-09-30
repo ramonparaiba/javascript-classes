@@ -5,7 +5,7 @@ let nome = document.getElementById('nome');
 let fotografia = document.getElementById('fotografia');
 let bio = document.getElementById('bio');
 let seguidores = document.getElementById('seguidores');
-let repositorios = document.getElementById('repositorios');
+let reposlist = document.getElementById('reposlist');
 let qtdrepos = document.getElementById('qtdrepos');
 
 async function getMetaData(){
@@ -30,9 +30,10 @@ buscar.addEventListener('click', (e) => {
       qtdrepos.innerHTML = profile.public_repos     
   })
   getRepositories().then(repositories => {
-    repositorios.innerHTML = repositories.map((item)=>{
-      return `<li>`+item.name+`</li>`
-    }) 
+    reposlist.innerHTML = repositories.map((item)=>{
+      console.log(item.name)
+      return `<li>`+item.name+`</li> <hr>`
+    }).join("")
   })
 })
 
