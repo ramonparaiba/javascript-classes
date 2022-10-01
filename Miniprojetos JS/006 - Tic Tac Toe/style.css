@@ -5,20 +5,27 @@
 #boxcounter{
   text-align: center;
   margin: 0;
-  padding: 10%;
+  padding: 5% 6% 10%;
   box-shadow: 0 10px 5px #0005;
   border-radius: 15px;
   background-color: #f4f4f4;
 }
-.botao{
-  padding: 2%;
-  border:0;
-  background-color: #000;
-  color: white;
-  border-radius: 8px;
+#painel{
+  font-size: 24pt;
 }
-.botao:hover{
-  background: rgb(97, 97, 97);
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 5%;
 }
-
-#contador{font-size: 45pt;}
+.grid-item{
+  background-color: #f4f4f4;
+  margin: 1px;
+  padding: 10%;
+  height: 40px;
+  font-size: 22pt;
+}
+.grid-item:hover{
+  background-color: #fcff5d;
+}
