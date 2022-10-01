@@ -1,0 +1,23 @@
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#boxcounter{
+  text-align: center;
+  margin: 0;
+  padding: 10%;
+  box-shadow: 0 10px 5px #0005;
+  border-radius: 15px;
+  background-color: rgb(7, 218, 255);
+}
+.botao{
+  padding: 2%;
+  border:0;
+  background-color: #000;
+  color: white;
+  border-radius: 8px;
+}
+.botao:hover{
+  background: rgb(97, 97, 97);
+}
+
+#contador{font-size: 45pt;}
