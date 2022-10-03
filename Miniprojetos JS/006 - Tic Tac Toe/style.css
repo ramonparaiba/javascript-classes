@@ -20,11 +20,12 @@
   padding: 5%;
 }
 .grid-item{
-  background-color: #f4f4f4;
+  background-color: #e0e0e0;
   margin: 1px;
   padding: 10%;
   height: 40px;
   font-size: 22pt;
+  border: 0;
 }
 .grid-item:hover{
   background-color: #fcff5d;
