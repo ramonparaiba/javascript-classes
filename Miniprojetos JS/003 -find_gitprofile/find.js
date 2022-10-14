@@ -32,7 +32,7 @@ buscar.addEventListener('click', (e) => {
   getRepositories().then(repositories => {
     reposlist.innerHTML = repositories.map((item)=>{
       console.log(item.name)
-      return `<li>`+item.name+`</li> <hr>`
+      return `<li>`+item.name+`</li>`+'<hr>'
     }).join("")
   })
 })
